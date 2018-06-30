@@ -4,7 +4,7 @@ COPY . .
 RUN npm set progress=false &&\
   npm config set depth 0 &&\
   npm config set loglevel error &&\
-  npm ci || npm i &&\
+  npm ci --production || npm i --production &&\
   npm run build
 
 FROM lkwg82/h2o-http2-server:v2.2.5
