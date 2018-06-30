@@ -45,7 +45,6 @@
     "publish": {
       "path": "semantic-release-docker",
       "name": "leosuncin/realworld-frontend"
-    },
-    "branch": "release/devops"
+    }
   }
 }
