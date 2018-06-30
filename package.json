@@ -40,7 +40,6 @@
       "semantic-release-docker"
     ],
     "prepare": [
-      "@semantic-release/changelog",
       "@semantic-release/git"
     ],
     "publish": {
