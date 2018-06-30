@@ -1,4 +1,7 @@
 language: node_js
+email: false
+services:
+  - docker
 node_js:
   - 10
 cache:
@@ -9,3 +12,6 @@ install:
   - npm ci
 script:
   - npm test
+after_script:
+  - docker build -t leosuncin/realworld-frontend .
+  - npx semantic-release
